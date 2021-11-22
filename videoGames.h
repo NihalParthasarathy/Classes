@@ -1,4 +1,11 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
-#include <media.h>
+#include "media.h"
+
+using namespace std;
+
+class VideoGames : public Media {
+public:
+
+};
