@@ -8,19 +8,19 @@ using namespace std;
 Media::title() {
 
 }
-Media::year() {
+int Media::year() {
 
 }
 Media::publisher() {
 
 }
-Media::rating() {
+int Media::rating() {
 
 }
-Meida::artist() {
+Media::artist() {
 
 }
-Media::duration() {
+int Media::duration() {
 
 }
 Media::director() {

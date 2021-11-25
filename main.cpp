@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
-#include "media.h"
+#include "videoGames.h"
+#include "movies.h"
+#include "music.h"
 using namespace std;
 
 int main() {
