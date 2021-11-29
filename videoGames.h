@@ -7,5 +7,6 @@ using namespace std;
 
 class VideoGames : public Media {
 public:
-
+  publisher();
+  int rating();
 };

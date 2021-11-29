@@ -11,20 +11,5 @@ Media::title() {
 int Media::year() {
 
 }
-Media::publisher() {
-
-}
-int Media::rating() {
-
-}
-Media::artist() {
-
-}
-int Media::duration() {
-
-}
-Media::director() {
-
-}
 
 

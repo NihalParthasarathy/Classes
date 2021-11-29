@@ -45,11 +45,22 @@ int main() {
 }
 
 void addGames() {
+  cout << "Add title" << endl;
 
+  cout << "Add year" << endl;
+
+  cout << "Add publisher" << endl;
+
+  cout << "Add rating" << endl;
 }
 
 void addMusic() {
+  cout << "Add title" << endl;
 
+  cout << "Add year" << endl;
+
+  
+  
 }
 
 void addMovies() {

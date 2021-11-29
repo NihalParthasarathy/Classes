@@ -11,13 +11,9 @@ class Media {
 public:
   title();
   int year();
-  publisher();
-  int rating();
-  artist();
-  int duration();
-  director();
 protected:
   int id;
+  
   
 };
 #endif
