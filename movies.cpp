@@ -7,10 +7,13 @@ using namespace std;
 
 Movies::director() {
 
+  return 0;
 }
 int Movies::duration() {
 
+  return 0;
 }
 int Movies::rating() {
 
+  return 0;
 }

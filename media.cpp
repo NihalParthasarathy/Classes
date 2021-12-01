@@ -5,11 +5,14 @@
 
 using namespace std;
 
-Media::title() {
-
+void Media::title() {
+  cin >> titleArray;
+  cout << titleArray << endl;
+  
 }
-int Media::year() {
-
+void Media::year() {
+  cin >> date;
+  cout << date << endl;
 }
 
 

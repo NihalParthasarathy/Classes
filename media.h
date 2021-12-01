@@ -9,10 +9,11 @@ using namespace std;
 
 class Media {
 public:
-  title();
-  int year();
+  virtual void title();
+  virtual void year();
 protected:
-  int id;
+  char titleArray[100];
+  int date;
   
   
 };

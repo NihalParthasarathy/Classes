@@ -5,7 +5,9 @@
 
 VideoGames::publisher() {
 
+  return 0;
 }
 int VideoGames::rating() {
 
+  return 0;
 }

@@ -5,10 +5,13 @@
 
 Music::artist() {
 
+  return 0;
 }
 int Music::duration() {
 
+  return 0;
 }
 Music::publisher() {
 
+  return 0;
 }
