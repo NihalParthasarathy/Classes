@@ -7,7 +7,7 @@ using namespace std;
 
 class Music : public Media {
 public:
-  artist();
-  int duration();
-  publisher();
+  virtual void getArtist();
+  virtual void getDuration();
+  virtual void getPublisher();
 };

@@ -3,15 +3,15 @@
 #include <vector>
 #include "music.h"
 
-Music::artist() {
-
-  return 0;
+void Music::getArtist() {
+  cin >> artist;
+  cout << artist << endl;
 }
-int Music::duration() {
-
-  return 0;
+void Music::getDuration() {
+  cin >> duration;
+  cout << duration << endl;
 }
-Music::publisher() {
-
-  return 0;
+void Music::getPublisher() {
+  cin >> publisher;
+  cout << publisher << endl;
 }

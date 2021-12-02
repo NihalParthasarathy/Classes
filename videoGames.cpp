@@ -3,11 +3,11 @@
 #include <vector>
 #include "videoGames.h"
 
-VideoGames::publisher() {
-
-  return 0;
+void VideoGames::getPublisher() {
+  cin >> publisher;
+  cout << publisher << endl;
 }
-int VideoGames::rating() {
-
-  return 0;
+void VideoGames::getRating() {
+  cin >> rating;
+  cout << rating << endl;
 }

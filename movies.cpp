@@ -5,15 +5,15 @@
 
 using namespace std;
 
-Movies::director() {
-
-  return 0;
+void Movies::getDirector() {
+  cin >> director;
+  cout << director << endl;
 }
-int Movies::duration() {
-
-  return 0;
+void Movies::getDuration() {
+  cin >> duration;
+  cout << duration << endl;
 }
-int Movies::rating() {
-
-  return 0;
+void Movies::getRating() {
+  cin >> rating;
+  cout << rating << endl;
 }

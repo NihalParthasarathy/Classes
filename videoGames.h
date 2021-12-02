@@ -7,6 +7,6 @@ using namespace std;
 
 class VideoGames : public Media {
 public:
-  publisher();
-  int rating();
+  virtual void getPublisher();
+  virtual void getRating();
 };
