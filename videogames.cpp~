@@ -4,7 +4,7 @@
 #include "videoGames.h"
 
 void VideoGames::getPublisher() {
-  cin.getline(publisher, 30);
+  cin >> publisher;
   cout << publisher << endl;
 }
 void VideoGames::getRating() {

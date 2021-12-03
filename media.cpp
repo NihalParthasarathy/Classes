@@ -6,7 +6,7 @@
 using namespace std;
 
 void Media::title() {
-  cin >> titleArray;
+  cin.getline (titleArray, 100);
   cout << titleArray << endl;
   
 }

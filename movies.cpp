@@ -6,7 +6,7 @@
 using namespace std;
 
 void Movies::getDirector() {
-  cin >> director;
+  cin.getline(director, 20);
   cout << director << endl;
 }
 void Movies::getDuration() {

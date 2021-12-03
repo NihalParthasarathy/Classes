@@ -4,7 +4,7 @@
 #include "music.h"
 
 void Music::getArtist() {
-  cin >> artist;
+  cin.getline(artist, 20);
   cout << artist << endl;
 }
 void Music::getDuration() {
@@ -12,6 +12,6 @@ void Music::getDuration() {
   cout << duration << endl;
 }
 void Music::getPublisher() {
-  cin >> publisher;
+  cin.getline(publisher, 50);
   cout << publisher << endl;
 }
