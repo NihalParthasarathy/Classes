@@ -11,8 +11,9 @@ using namespace std;
 
 class Movies : public Media {
 public:
-  virtual void getDirector();
-  virtual void getDuration();
-  virtual void getRating();
+  void getDirector();
+  void getDuration();
+  void getRating();
+  void printMovies();
 
 };

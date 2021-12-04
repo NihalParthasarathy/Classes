@@ -9,9 +9,13 @@ using namespace std;
 
 class Media {
 public:
-  virtual void title();
-  virtual void year();
-protected:
+  char* title();
+  int year();
+
+  virtual void printGames();
+  virtual void printMovies();
+  virtual void printMusic();
+  
   char titleArray[100];
   int date = 0;
   char publisher[20];
@@ -19,5 +23,7 @@ protected:
   char artist[20];
   int duration;
   char director[20];
+protected:
+  
 };
 #endif

@@ -5,10 +5,9 @@
 
 using namespace std;
 
-class Music : public Media {
+class VideoGames : public Media {
 public:
-  void getArtist();
-  void getDuration();
   void getPublisher();
-  void printMusic();
+  void getRating();
+  void printGames();
 };

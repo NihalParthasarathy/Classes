@@ -5,14 +5,22 @@
 
 using namespace std;
 
-void Media::title() {
-  cin.getline (titleArray, 100);
-  cout << titleArray << endl;
+char* Media::title() {
+  return titleArray;
   
 }
-void Media::year() {
-  cin >> date;
-  cout << date << endl;
+int Media::year() {
+  return date;
+}
+
+void Media::printGames() {
+  cout << "I am fat" << endl;
+}
+void Media::printMovies() {
+
+}
+void Media::printMusic() {
+
 }
 
 

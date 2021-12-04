@@ -17,3 +17,13 @@ void Movies::getRating() {
   cin >> rating;
   cout << rating << endl;
 }
+
+void Movies::printMovies() {
+  cout << "Title of the movie is " << titleArray << endl;
+  cout << "The year it was released is " << date << endl;
+  cout << "The director is " << director << endl;
+  cout << "The movies is " << duration << " minutes" << endl;
+  cout << "The rating is " << rating << " out of 10 stars" << endl;
+
+
+}

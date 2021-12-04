@@ -45,15 +45,17 @@ void addMedia(vector <Media*> &newv) {
   if (strcmp(input, "videogames") == 0) {
     media = gameptr;
     cout<< "Add title" << endl;
-    media->title();
+    cin.getline(media->titleArray, 100);
     cout << "Add year it was published" << endl;
-    media->year();
+    cin >> media->date;
     cin.ignore();
     cout << "Add publisher" << endl;
-    gameptr->getPublisher();
+    cin.getline(gameptr->publisher, 100);
     cout << "Add rating out of 10 stars" << endl;
-    gameptr->getRating();
+    cin >> gameptr->rating;
     cin.ignore();
+    (newv).push_back(media);
+    (newv).push_back(gameptr);
   }
   else if (strcmp(input, "music") == 0) {
     media = musicptr;
@@ -91,19 +93,25 @@ void addMedia(vector <Media*> &newv) {
 
 void searchMedia(vector <Media*> &newv) {
   char str[10];
-  Music* musicptr = new Music();
-  Movies* movieptr = new Movies();
-  VideoGames* gameptr = new VideoGames();
   Media* media;
-  cout << "If you want to search by title say TITLE and if you want to search by the year say YEAR" << endl;
+  vector<Media*>::iterator it;
+  cout << "Do you want to search by title(t) or year(y)" << endl;
   cin >> str;
-  if (strcmp(str, "TITLE") == 0) {
+  cin.ignore();
+  if (strcmp(str, "t") == 0) {
     char input[50];
-    cout << "Enter in title" << endl;
-    cin >> input;
+    cout << "Enter title" << endl;
+    cin.getline(input, 50);
+    for (it = newv.begin(); it < newv.end(); ++it) {
+      if (strcmp((*it)->titleArray, input) == 0) {
+	(*it)->printGames();
+	(*it)->printMovies();
+	(*it)->printMusic();
+      }
+    }
     
   }
-  else if (strcmp(str, "YEAR") == 0) {
+  else if (strcmp(str, "y") == 0) {
     char input2[50];
     cout << "Enter in year" << endl;
     cin >> input2;
