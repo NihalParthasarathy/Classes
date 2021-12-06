@@ -3,25 +3,26 @@
 #include <vector>
 #include "music.h"
 
-void Music::getArtist() {
-  cin.getline(artist, 20);
-  cout << artist << endl;
+char* Music::getArtist() {//Returns artist name
+  return artist;
 }
-void Music::getDuration() {
-  cin >> duration;
-  cout << duration << endl;
+int Music::getDuration() {//Returns duration
+  return duration;
 }
-void Music::getPublisher() {
-  cin.getline(publisher, 50);
-  cout << publisher << endl;
+char* Music::getPublisher() {//Returns publisher
+  return publisher;
 }
 
-void Music::printMusic() {
+void Music::print() {//Prints out the media and its contents
   cout << "Title of the song is " << titleArray << endl;
   cout << "The year it was published is " << date << endl;
   cout << "The artist is " << artist << endl;
   cout << "The song is " << duration << " seconds" << endl;
   cout << "The publisher is " << publisher << endl;
   cout << " " << endl;
+
+}
+
+Music::~Music() {//Destructor
 
 }

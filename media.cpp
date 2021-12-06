@@ -5,22 +5,19 @@
 
 using namespace std;
 
-char* Media::title() {
+char* Media::title() {//Returns the title name
   return titleArray;
   
 }
-int Media::year() {
+int Media::year() {//Returns the date
   return date;
 }
 
-void Media::printGames() {
-  cout << "I am fat" << endl;
-}
-void Media::printMovies() {
+void Media::print() {//Emptey print function which is changed by child class
 
 }
-void Media::printMusic() {
-
+Media::~Media() {//Destructer
 }
+
 
 

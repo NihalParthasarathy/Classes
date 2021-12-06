@@ -7,7 +7,11 @@ using namespace std;
 
 class VideoGames : public Media {
 public:
+  //Functions for videogames
   char* getPublisher();
   int getRating();
-  void printGames();
+  
+  void print();//Print function
+
+  ~VideoGames();//Destructor
 };

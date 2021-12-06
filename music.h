@@ -5,10 +5,14 @@
 
 using namespace std;
 
-class Music : public Media {
+class Music : public Media {//Music class with inheritance from media
 public:
-  void getArtist();
-  void getDuration();
-  void getPublisher();
-  void printMusic();
+  //Functions for music
+  char* getArtist();
+  int getDuration();
+  char* getPublisher();
+  
+  void print();//Print function for music
+
+  ~Music();//Destructor
 };

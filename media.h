@@ -1,3 +1,4 @@
+//Header Gaurd
 #ifndef MOVIES_H
 #define MOVIES_H
 
@@ -7,15 +8,17 @@
 
 using namespace std;
 
-class Media {
+class Media {//Parent Class
 public:
+  //Methods
   char* title();
   int year();
 
-  virtual void printGames();
-  virtual void printMovies();
-  virtual void printMusic();
+  virtual ~Media();//Destructor
   
+  virtual void print();//Print method
+
+  //Varubles
   char titleArray[100];
   int date = 0;
   char publisher[20];
@@ -26,4 +29,5 @@ public:
 protected:
   
 };
+
 #endif

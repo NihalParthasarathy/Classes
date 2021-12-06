@@ -5,25 +5,25 @@
 
 using namespace std;
 
-void Movies::getDirector() {
-  cin.getline(director, 20);
-  cout << director << endl;
+char* Movies::getDirector() {//Returns the direcotr name
+  return director;
 }
-void Movies::getDuration() {
-  cin >> duration;
-  cout << duration << endl;
+int Movies::getDuration() {//Returns the duration of the movie
+  return duration;
 }
-void Movies::getRating() {
-  cin >> rating;
-  cout << rating << endl;
+int Movies::getRating() {//Returns the rating
+  return rating;
 }
 
-void Movies::printMovies() {
+void Movies::print() {//Prints the movie media out with all of you contents
   cout << "Title of the movie is " << titleArray << endl;
   cout << "The year it was released is " << date << endl;
   cout << "The director is " << director << endl;
   cout << "The movies is " << duration << " minutes" << endl;
   cout << "The rating is " << rating << " out of 10 stars" << endl;
 
+}
+
+Movies::~Movies() {//Destructor
 
 }
