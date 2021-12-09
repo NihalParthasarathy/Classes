@@ -170,6 +170,7 @@ void deleteMedia(vector<Media*> &newv) {
     for (int i = 0; i < newv.size(); i++) {
       if (strcmp(newv[i]->titleArray, input) == 0) {//Sees if any media matches the input
 	cout << "Are you sure you want to delete this y or n" << endl;
+	newv[i]->print();
 	cin >> sure;
 	if (strcmp(sure, "y") == 0) {//Checks to see if you want to delete
 	  //Both delete the media from the memory and the pointer
@@ -195,6 +196,7 @@ void deleteMedia(vector<Media*> &newv) {
     for (int i = 0; i < newv.size(); i++) {//For loop
       if (newv[i]->date == input) {//Checks to see if any date mathces the input
         cout << "Are you sure you want to delete this y or n" << endl;
+	newv[i]->print();
         cin >> sure;
 	if (strcmp(sure, "y") == 0) {//Checks to see if you want to delete
 	  //Deletes the media from memory and deletes the pointer
